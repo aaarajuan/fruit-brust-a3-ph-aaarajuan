@@ -39,8 +39,8 @@
     <!-- header start here -->
     <header>
       <!-- nav bar -->
-        <nav class="lg:mx-72 lg:my-12 lg:p-3 lg:border lg:
-        rounded-full lg:text-white lg:bg-green-700">
+        <nav class="mx-72 my-12 p-3 border 
+        rounded-full text-white bg-green-700">
             <div class="navbar justify-center">
                 <div class="navbar-start justify-end absolute lg:justify-start lg:relative">
                     <div class="dropdown">
@@ -75,10 +75,11 @@
         </nav>
         <!-- banner -->
         <div class="banner-container">
-            <div class="lg:mx-72 rounded-lg carousel w-auto">
+            <div class="mx-72 rounded-lg carousel w-auto">
+              <!-- slider 1 -->
                 <div id="slide1" class="carousel-item relative w-full justify-center items-center text-center">
                     <img src="./images/banner1.png" class="w-full" />
-                    <div class="banner-content w-full h-full absolute space-y-3 bg-gradient-to-r from-color-dark from-0% to-[rgba(18, 18, 18, 0.00)] to-100%">
+                    <div class="banner-content w-full h-full absolute space-y-3 hero-overlay bg-opacity-60">
                       <h2 class="text-6xl	font-bold text-white mt-32">Exotic tastes at your <br>doorstep</h2>
                       <p class="text-white">We supply highly quality organic products</p>
                       <button class="btn bg-btn-primary border-none text-white">Shop Now</button>
@@ -88,9 +89,10 @@
                         <a href="#slide2" class="btn btn-circle">❯</a>  
                     </div>
                 </div> 
+                <!-- slider 2 -->
                 <div id="slide2" class="carousel-item relative w-full justify-center items-center text-center">
                     <img src="./images/banner2.png" class="w-full" />
-                    <div class="banner-content w-full h-full absolute space-y-3 bg-gradient-to-r from-color-dark from-0% to-[rgba(18, 18, 18, 0.00)] to-100%">
+                    <div class="banner-content w-full h-full absolute space-y-3 hero-overlay bg-opacity-60">
                       <h2 class="text-6xl	font-bold text-white mt-32">Exotic tastes at your <br>doorstep</h2>
                       <p class="text-white">We supply highly quality organic products</p>
                       <button class="btn bg-btn-primary border-none text-white">Shop Now</button>
@@ -100,9 +102,10 @@
                         <a href="#slide3" class="btn btn-circle">❯</a>  
                     </div>
                 </div> 
+                <!-- slider 3 -->
                 <div id="slide3" class="carousel-item relative w-full justify-center items-center text-center">
                     <img src="./images/banner3.png" class="w-full" />
-                    <div class="banner-content w-full h-full absolute space-y-3 bg-gradient-to-r from-color-dark from-0% to-[rgba(18, 18, 18, 0.00)] to-100%">
+                    <div class="banner-content w-full h-full absolute space-y-3 hero-overlay bg-opacity-60">
                       <h2 class="text-6xl	font-bold text-white mt-32">Exotic tastes at your <br>doorstep</h2>
                       <p class="text-white">We supply highly quality organic products</p>
                       <button class="btn bg-btn-primary border-none text-white">Shop Now</button>
@@ -112,9 +115,10 @@
                         <a href="#slide4" class="btn btn-circle">❯</a>  
                     </div>
                 </div> 
+                <!-- slider 4 -->
                 <div id="slide4" class="carousel-item relative w-full justify-center items-center text-center">
                     <img src="./images/banner4.png" class="w-full" />
-                    <div class="banner-content w-full h-full absolute space-y-3 bg-gradient-to-r from-color-dark from-0% to-[rgba(18, 18, 18, 0.00)] to-100%">
+                    <div class="banner-content w-full h-full absolute space-y-3 hero-overlay bg-opacity-60">
                       <h2 class="text-6xl	font-bold text-white mt-32">Exotic tastes at your <br>doorstep</h2>
                       <p class="text-white">We supply highly quality organic products</p>
                       <button class="btn bg-btn-primary border-none text-white">Shop Now</button>
@@ -273,6 +277,90 @@
       </section>
 
       <!-- meet the team -->
+      <section>
+        <div class="mx-72 mb-12">
+          <div class="hero rounded-xl" style="background-image: url(./images/team.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="flex flex-col justify-center items-center">
+                <!-- contents -->
+                <div class="max-w-md space-y-5">
+                  <h1 class="text-5xl font-bold">Meet the team section</h1>
+                  <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                  <button class="btn btn-primary">Get Started</button>
+                  </div>
+
+                <!-- team members -->
+                <div class="team-members mt-12 flex gap-10">
+                  <div class="teams-container">
+                    <div class="teams flex flex-col">
+                      <div class="text-center">
+                        <img src="./images/member1.png" alt="">
+                        <h4 class="name text-white">Awlad Hossain</h4>
+                        <p class="ocupation text-white">Fruits Expert</p>
+                      </div>
+                      <div class="social icons">
+                        <ul class="flex justify-center gap-2">
+                          <li><a href="#"><i class="fa-brands fa-facebook" style="color: #F85559;"></i></a></li>
+                          <li><a href="#"><i class="fa-brands fa-twitter" style="color: #F85559;"></i></a></li>
+                          <li><a href="#"><i class="fa-brands fa-linkedin" style="color: #F85559;"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="teams-container">
+                    <div class="teams flex flex-col">
+                      <div class="text-center">
+                        <img src="./images/member2.png" alt="">
+                        <h4 class="name text-white">Awlad Hossain</h4>
+                        <p class="ocupation text-white">Fruits Expert</p>
+                      </div>
+                      <div class="social icons">
+                        <ul class="flex justify-center gap-2">
+                          <li><a href="#"><i class="fa-brands fa-facebook" style="color: #F85559;"></i></a></li>
+                          <li><a href="#"><i class="fa-brands fa-twitter" style="color: #F85559;"></i></a></li>
+                          <li><a href="#"><i class="fa-brands fa-linkedin" style="color: #F85559;"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="teams-container">
+                    <div class="teams flex flex-col">
+                      <div class="text-center">
+                        <img src="./images/member3.png" alt="">
+                        <h4 class="name text-white">Awlad Hossain</h4>
+                        <p class="ocupation text-white">Fruits Expert</p>
+                      </div>
+                      <div class="social icons">
+                        <ul class="flex justify-center gap-2">
+                          <li><a href="#"><i class="fa-brands fa-facebook" style="color: #F85559;"></i></a></li>
+                          <li><a href="#"><i class="fa-brands fa-twitter" style="color: #F85559;"></i></a></li>
+                          <li><a href="#"><i class="fa-brands fa-linkedin" style="color: #F85559;"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="teams-container">
+                    <div class="teams flex flex-col">
+                      <div class="text-center">
+                        <img src="./images/member4.png" alt="">
+                        <h4 class="name text-white">Awlad Hossain</h4>
+                        <p class="ocupation text-white">Fruits Expert</p>
+                      </div>
+                      <div class="social icons">
+                        <ul class="flex justify-center gap-2">
+                          <li><a href="#"><i class="fa-brands fa-facebook" style="color: #F85559;"></i></a></li>
+                          <li><a href="#"><i class="fa-brands fa-twitter" style="color: #F85559;"></i></a></li>
+                          <li><a href="#"><i class="fa-brands fa-linkedin" style="color: #F85559;"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+          </div>
+        <div>
+      </section>
     </main>
     <!-- main end here -->
 
