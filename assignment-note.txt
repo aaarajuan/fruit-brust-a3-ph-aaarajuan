@@ -1,12 +1,12 @@
-#Main Marks (responsive):
-1. Navbar
-2. Banner Section
-3. Deal of the day
-4. Meet the team section
-5. Footer
+#Main Marks:
+1. Navbar [done]
+2. Banner Section [done]
+3. Deal of the day [done]
+4. Meet the team section [done]
+5. Footer [done]
 
 #Bonus Mark:
-1. banner
-2. details click to open the model
-3. why choose us
-4. for responsive (mobile)
+1. banner fruits [done]
+2. details click to open the model [done]
+3. why choose us [done]
+4. for responsive (mobile) [stuck here!!!]
