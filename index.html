@@ -141,7 +141,7 @@
     </div>
     <!-- fruit box -->
     <div
-      class="fruit-box absolute flex justify-evenly text-center p-12 pr-36 gap-x-16 shadow-xl ml-96 mr-96 -translate-y-32 bg-white rounded-lg">
+      class="hidden lg:fruit-box lg:absolute lg:flex lg:justify-evenly lg:text-center lg:p-12 lg:pr-36 lg:gap-x-16 lg:shadow-xl lg:ml-96 lg:mr-96 lg:-translate-y-32 lg:bg-white lg:rounded-lg">
       <div class="fruits pl-28">
         <img src="./images/fruit1.png" alt="">
         <p class="text-[#121212]">Grapes</p>
@@ -169,9 +169,9 @@
   <!-- main start here -->
   <main>
     <!-- deal of the day -->
-    <section>
+    <section class="">
       <div class="dotd mx-72 my-36">
-        <div class="dotd-container flex lg:justify-between">
+        <div class="dotd-container grid justify-center lg:justify-between">
           <div class="dotd-content space-y-4">
             <h2 class="font-extrabold text-5xl">Deal of the day</h2>
             <p class="font-semibold text-[14px]">Contrary to popular belief, is not simply random text. It has roots in
@@ -205,7 +205,7 @@
           </div>
         </div>
         <!-- deal of the day cards -->
-        <div class="cards mt-6 flex justify-center gap-16">
+        <div class="cards mt-6 justify-center gap-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           <!-- card 1 -->
           <div class="card w-96 bg-base-100 shadow-xl">
             <figure class="px-10 pt-10">
