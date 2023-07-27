@@ -11,6 +11,18 @@
     <!-- Daisy UI & Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'btn-primary': '#F85559',
+              'color-dark': '#121212',
+            }
+          }
+        }
+      }
+    </script>
 
     <!-- Google Fonts: Lato -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +38,8 @@
 <body>
     <!-- header start here -->
     <header>
-        <nav class="lg:mx-96 lg:my-12 lg:border lg:
+      <!-- nav bar -->
+        <nav class="lg:mx-96 lg:my-12 lg:p-3 lg:border lg:
         rounded-full lg:text-white lg:bg-green-700">
             <div class="navbar justify-center">
                 <div class="navbar-start justify-end absolute lg:justify-start lg:relative">
@@ -42,7 +55,7 @@
                       </ul>
                     </div>
                     <div class="navbar-center hidden lg:flex">
-                        <ul class="menu menu-horizontal px-1">
+                        <ul class="menu menu-horizontal px-1 ">
                           <li><a href="#">Home</a></li>
                           <li><a href="#">About</a></li>
                           <li><a href="#">Shop</a></li>
@@ -60,12 +73,115 @@
                 </div>
               </div>
         </nav>
+        <!-- banner -->
+        <div class="banner-container">
+            <div class="lg:mx-96 rounded-lg carousel w-auto">
+                <div id="slide1" class="carousel-item relative w-full justify-center items-center text-center">
+                    <img src="./images/banner1.png" class="w-full" />
+                    <div class="banner-content w-full h-full absolute space-y-3 bg-gradient-to-r from-color-dark from-0% to-[rgba(18, 18, 18, 0.00)] to-100%">
+                      <h2 class="text-6xl	font-bold text-white mt-32">Exotic tastes at your <br>doorstep</h2>
+                      <p class="text-white">We supply highly quality organic products</p>
+                      <button class="btn bg-btn-primary border-none text-white">Shop Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>  
+                    </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full justify-center items-center text-center">
+                    <img src="./images/banner2.png" class="w-full" />
+                    <div class="banner-content w-full h-full absolute space-y-3 bg-gradient-to-r from-color-dark from-0% to-[rgba(18, 18, 18, 0.00)] to-100%">
+                      <h2 class="text-6xl	font-bold text-white mt-32">Exotic tastes at your <br>doorstep</h2>
+                      <p class="text-white">We supply highly quality organic products</p>
+                      <button class="btn bg-btn-primary border-none text-white">Shop Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>  
+                    </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full justify-center items-center text-center">
+                    <img src="./images/banner3.png" class="w-full" />
+                    <div class="banner-content w-full h-full absolute space-y-3 bg-gradient-to-r from-color-dark from-0% to-[rgba(18, 18, 18, 0.00)] to-100%">
+                      <h2 class="text-6xl	font-bold text-white mt-32">Exotic tastes at your <br>doorstep</h2>
+                      <p class="text-white">We supply highly quality organic products</p>
+                      <button class="btn bg-btn-primary border-none text-white">Shop Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>  
+                    </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full justify-center items-center text-center">
+                    <img src="./images/banner4.png" class="w-full" />
+                    <div class="banner-content w-full h-full absolute space-y-3 bg-gradient-to-r from-color-dark from-0% to-[rgba(18, 18, 18, 0.00)] to-100%">
+                      <h2 class="text-6xl	font-bold text-white mt-32">Exotic tastes at your <br>doorstep</h2>
+                      <p class="text-white">We supply highly quality organic products</p>
+                      <button class="btn bg-btn-primary border-none text-white">Shop Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>  
+                    </div>
+                </div> 
+
+            </div>
+        </div>
     </header>
     <!-- header end here -->
 
     <!-- main start here -->
     <main>
+      <!-- deal of the day -->
+      <section>
+        <div class="dotd mx-96 my-12">
+          <div class="dotd-container flex lg:justify-between">
+            <div class="dotd-content">
+              <h2 class="font-extrabold text-5xl">Deal of the day</h2>
+              <p class="font-semibold text-[14px]">Contrary to popular belief, is not simply random text. It has roots in a piece of <br> classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:15;"></span>
+                </span>
+                days
+              </div> 
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:10;"></span>
+                </span>
+                hours
+              </div> 
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:24;"></span>
+                </span>
+                min
+              </div> 
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:29;"></span>
+                </span>
+                sec
+              </div>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="card w-96 bg-base-100 shadow-xl">
+              <figure class="px-10 pt-10">
+                <img src="/images/" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">12.90$ - 18.85$</h2>
+                <p>Apples</p>
 
+                <p class="text-red-500">Details</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- main end here -->
 
